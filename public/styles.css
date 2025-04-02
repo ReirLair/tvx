@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(32, 32, 32, 0.9);
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Channel Info */
+.channel-info {
+    background: linear-gradient(135deg, #252525, #333);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.channel-info h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #ffcc00;
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.5);
+}
+
+.channel-info p {
+    margin: 5px 0 0;
+    font-size: 17px;
+    color: #ddd;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 0, 0, 0.5);
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    background: black;
+    border-radius: 12px;
+}
+
+/* Controls */
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e60000, #b30000);
+    transform: scale(1.08);
+    box-shadow: 0px 6px 12px rgba(255, 0, 0, 0.4);
+}
+
+input[type="range"] {
+    width: 120px;
+    margin-left: 10px;
+    accent-color: #ff0000;
+    cursor: pointer;
+}
+
+/* Channel Switch Buttons */
+.channel-buttons {
+    margin-top: 20px;
+}
+
+.channel-buttons button {
+    background: #202020;
+    border: 2px solid #ff0000;
+    color: white;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.channel-buttons button:hover {
+    background: #ff0000;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    input[type="range"] {
+        width: 80px;
+    }
+}
