@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script> <!-- HLS.js -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Live TypS</h1>
+
+        <!-- Channel Info -->
+        <div class="channel-info">
+            <h2 id="channelName">Loading...</h2>
+            <p id="currentShow">Now Playing: Loading...</p>
+        </div>
+
+        <!-- Video Container -->
+        <div class="video-container">
+            <video id="tvPlayer" autoplay playsinline></video> <!-- Removed default controls -->
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button onclick="togglePlay()">▶ Play/Pause</button>
+            <button onclick="toggleFullscreen()">⛶ Fullscreen</button>
+            <button id="muteBtn" onclick="toggleMute()">🔊 Mute</button>
+        </div>
+
+        <!-- Dynamic Channel Buttons -->
+        <div id="channelList" class="channel-buttons">
+            <p>Loading channels...</p> <!-- Placeholder until channels load -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
